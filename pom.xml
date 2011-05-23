@@ -35,7 +35,7 @@
 
   <groupId>org.openengsb.domain</groupId>
   <artifactId>openengsb-domain-test</artifactId>
-  <version>1.2.1</version>
+  <version>1.2.2-SNAPSHOT</version>
 
   <name>OpenEngSB :: Domain :: Test</name>
 
