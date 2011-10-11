@@ -22,7 +22,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://karaf.apache.org/xmlns/features/v1.0.0 http://karaf.apache.org/xmlns/features/v1.0.0" >
   <feature name="openengsb-domain-test" version="${project.version}" >
-    <feature version="${openengsb.version.range}">openengsb-core</feature>
+    <feature version="${openengsb.version.range}">openengsb-framework</feature>
     <bundle>mvn:org.openengsb.domain/openengsb-domain-test/${project.version}</bundle>
   </feature>
 </features>
