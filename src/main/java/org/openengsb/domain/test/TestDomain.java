@@ -20,6 +20,7 @@ package org.openengsb.domain.test;
 import org.openengsb.core.api.Domain;
 import org.openengsb.core.api.Raises;
 
+// @extract-start TestDomain
 /**
  * This domain can be used to run tests for projects. The affected project is usually configured in the respective tool
  * connector.
@@ -41,3 +42,4 @@ public interface TestDomain extends Domain {
     @Raises({ TestStartEvent.class, TestSuccessEvent.class, TestFailEvent.class })
     void runTests(long processId);
 }
+// @extract-end

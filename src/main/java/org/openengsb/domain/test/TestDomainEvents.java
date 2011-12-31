@@ -18,7 +18,7 @@
 package org.openengsb.domain.test;
 
 import org.openengsb.core.api.DomainEvents;
-
+// @extract-start TestDomainEvents
 public interface TestDomainEvents extends DomainEvents {
 
     void raiseEvent(TestStartEvent e);
@@ -29,3 +29,4 @@ public interface TestDomainEvents extends DomainEvents {
 
     void raiseEvent(TestSuccessEvent e);
 }
+// @extract-end
