@@ -18,7 +18,7 @@
 
 -->
 
-<chapter xml:id="domains.appointment.domain" version="5.0" xmlns="http://docbook.org/ns/docbook"
+<chapter xml:id="domains.test.domain" version="5.0" xmlns="http://docbook.org/ns/docbook"
   xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:xi="http://www.w3.org/2001/XInclude"
   xsi:schemaLocation="http://docbook.org/ns/docbook http://www.docbook.org/xml/5.0/xsd/docbook.xsd
