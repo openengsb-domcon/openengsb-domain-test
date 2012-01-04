@@ -31,7 +31,7 @@
   <properties>
     <bundle.symbolicName>org.openengsb.domain.test</bundle.symbolicName>
     <bundle.namespace>org.openengsb.domain.test</bundle.namespace>
-    <domain.name>Test</domain.name>
+    <domain.name>TestDomain</domain.name>
     <openengsb.compile.version>2.1.2</openengsb.compile.version>
   </properties>
 
