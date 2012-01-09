@@ -79,6 +79,10 @@
   <build>
     <plugins>
       <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>build-helper-maven-plugin</artifactId>
+      </plugin>
+      <plugin>
         <groupId>org.openengsb</groupId>
         <artifactId>openengsb-maven-plugin</artifactId>
       </plugin>
@@ -89,10 +93,6 @@
       <plugin>
         <groupId>com.agilejava.docbkx</groupId>
         <artifactId>docbkx-maven-plugin</artifactId>
-      </plugin>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>wagon-maven-plugin</artifactId>
       </plugin>
       <plugin>
         <groupId>org.apache.cxf</groupId>
