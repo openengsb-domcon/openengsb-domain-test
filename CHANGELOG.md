@@ -1,3 +1,18 @@
+openengsb-domain-test-2.0.1 2012-01-09
+---------------------------------------------------------------------
+
+Fix release of wsdl-files to maven repository
+
+** Bug
+    * [OPENENGSB-2636] - release is missing WSDL-artifact
+
+** Task
+    * [OPENENGSB-2637] - Release domain-test-2.0.1
+
+** Known Issues
+    * [OPENENGSB-2621] - Domain definition is not suited for distributed builds
+
+
 openengsb-domain-test-2.0.0 2012-01-09
 ---------------------------------------------------------------------
 
