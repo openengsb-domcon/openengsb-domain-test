@@ -19,6 +19,7 @@ package org.openengsb.domain.test;
 
 import org.openengsb.core.api.Domain;
 import org.openengsb.core.api.Raises;
+import org.openengsb.core.api.model.OpenEngSBFileModel;
 
 // @extract-start TestDomain
 /**
@@ -28,18 +29,18 @@ import org.openengsb.core.api.Raises;
 public interface TestDomain extends Domain {
 
     /**
-     * run all tests for the currently configured project. This method returns at once with an id. The tests are run
+     * run all tests for the project in 'path'. This method returns at once with an id. The tests are run
      * asynchronously. The result can be retrieved using the events raised by this domain, which also contain the id.
      */
     @Raises({ TestStartEvent.class, TestSuccessEvent.class, TestFailEvent.class })
-    String runTests();
+    String runTests(OpenEngSBFileModel path);
 
     /**
-     * run all tests for the currently configured project. This method returns at once with an id. The tests are run
+     * run all tests for the project in 'path'. This method returns at once with an id. The tests are run
      * asynchronously. The result can be retrieved using the events raised by this domain, with the processId set to the
      * supplied processId
      */
     @Raises({ TestStartEvent.class, TestSuccessEvent.class, TestFailEvent.class })
-    void runTestsProcessId(long processId);
+    void runTestsProcessId(OpenEngSBFileModel path, long processId);
 }
 // @extract-end

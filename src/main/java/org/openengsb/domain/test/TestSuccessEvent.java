@@ -17,14 +17,23 @@
 
 package org.openengsb.domain.test;
 
+import org.openengsb.core.api.model.OpenEngSBFileModel;
+
 public class TestSuccessEvent extends TestEndEvent {
 
-    public TestSuccessEvent(long processId, String output) {
+    private OpenEngSBFileModel path;
+
+    public TestSuccessEvent(long processId, String output, OpenEngSBFileModel path) {
         super(processId, output);
+        this.path = path;
     }
 
-    public TestSuccessEvent(String testId, String output) {
+    public TestSuccessEvent(String testId, String output, OpenEngSBFileModel path) {
         super(testId, output);
+        this.path = path;
     }
 
+    public OpenEngSBFileModel getPath() {
+        return path;
+    }
 }
