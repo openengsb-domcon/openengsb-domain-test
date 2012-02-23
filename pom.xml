@@ -49,7 +49,7 @@
   </description>
 
   <url>http://www.openengsb.org</url>
-  
+
   <inceptionYear>2009</inceptionYear>
 
   <licenses>
@@ -75,7 +75,7 @@
     <system>OpenCIT</system>
     <url>http://build.openengsb.org/opencit/</url>
   </ciManagement>
-  
+
   <build>
     <plugins>
       <plugin>
@@ -94,10 +94,10 @@
         <groupId>com.agilejava.docbkx</groupId>
         <artifactId>docbkx-maven-plugin</artifactId>
       </plugin>
-	  <plugin>
+      <plugin>
         <groupId>org.apache.axis2</groupId>
         <artifactId>axis2-java2wsdl-maven-plugin</artifactId>
-      </plugin>    
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-assembly-plugin</artifactId>
@@ -125,8 +125,9 @@
   </dependencies>
 
   <repositories>
-    <repository> <!-- OEB snapshots are deployed here -->
-     <id>sonatype-snapshots</id>
+    <repository>
+      <!-- OEB snapshots are deployed here -->
+      <id>sonatype-snapshots</id>
       <name>Sonaype Snapsht Repository</name>
       <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
       <releases>
