@@ -25,19 +25,19 @@
   <parent>
     <groupId>org.openengsb.domain</groupId>
     <artifactId>openengsb-domain-parent</artifactId>
-    <version>2.4.0</version>
+    <version>3.0.0-SNAPSHOT</version>
   </parent>
 
   <properties>
     <bundle.symbolicName>org.openengsb.domain.test</bundle.symbolicName>
     <bundle.namespace>org.openengsb.domain.test</bundle.namespace>
     <domain.name>TestDomain</domain.name>
-    <openengsb.compile.version>2.1.2</openengsb.compile.version>
+    <openengsb.compile.version>3.0.0-SNAPSHOT</openengsb.compile.version>
   </properties>
 
   <groupId>org.openengsb.domain</groupId>
   <artifactId>org.openengsb.domain.test</artifactId>
-  <version>2.1.0-SNAPSHOT</version>
+  <version>3.0.0-SNAPSHOT</version>
 
   <name>OpenEngSB :: Domain :: Test</name>
 
@@ -49,7 +49,7 @@
   </description>
 
   <url>http://www.openengsb.org</url>
-  
+
   <inceptionYear>2009</inceptionYear>
 
   <licenses>
@@ -75,7 +75,7 @@
     <system>OpenCIT</system>
     <url>http://build.openengsb.org/opencit/</url>
   </ciManagement>
-  
+
   <build>
     <plugins>
       <plugin>
@@ -95,8 +95,8 @@
         <artifactId>docbkx-maven-plugin</artifactId>
       </plugin>
       <plugin>
-        <groupId>org.apache.cxf</groupId>
-        <artifactId>cxf-java2ws-plugin</artifactId>
+        <groupId>org.apache.axis2</groupId>
+        <artifactId>axis2-java2wsdl-maven-plugin</artifactId>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -125,8 +125,9 @@
   </dependencies>
 
   <repositories>
-    <repository> <!-- OEB snapshots are deployed here -->
-     <id>sonatype-snapshots</id>
+    <repository>
+      <!-- OEB snapshots are deployed here -->
+      <id>sonatype-snapshots</id>
       <name>Sonaype Snapsht Repository</name>
       <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
       <releases>

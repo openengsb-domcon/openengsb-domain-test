@@ -23,6 +23,10 @@ public class TestStartEvent extends Event {
 
     private String testId;
 
+    public TestStartEvent() {
+        
+    }
+
     public TestStartEvent(String testId) {
         this.testId = testId;
     }
