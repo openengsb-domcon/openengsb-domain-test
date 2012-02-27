@@ -40,6 +40,6 @@ public interface TestDomain extends Domain {
      * supplied processId
      */
     @Raises({ TestStartEvent.class, TestSuccessEvent.class, TestFailEvent.class })
-    void runTests(long processId);
+    void runTestsProcessId(long processId);
 }
 // @extract-end

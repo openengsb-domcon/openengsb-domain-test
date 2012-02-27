@@ -21,12 +21,12 @@ import org.openengsb.core.api.DomainEvents;
 // @extract-start TestDomainEvents
 public interface TestDomainEvents extends DomainEvents {
 
-    void raiseEvent(TestStartEvent e);
+    void raiseTestStartEvent(TestStartEvent e);
 
-    void raiseEvent(TestEndEvent e);
+    void raiseTestEndEvent(TestEndEvent e);
 
-    void raiseEvent(TestFailEvent e);
+    void raiseTestFailEvent(TestFailEvent e);
 
-    void raiseEvent(TestSuccessEvent e);
+    void raiseTestSuccessEvent(TestSuccessEvent e);
 }
 // @extract-end
