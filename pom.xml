@@ -33,6 +33,7 @@
     <bundle.namespace>org.openengsb.domain.test</bundle.namespace>
     <domain.name>TestDomain</domain.name>
     <openengsb.compile.version>3.0.0-SNAPSHOT</openengsb.compile.version>
+    <labs.delegation.version>0.1.0</labs.delegation.version>
   </properties>
 
   <groupId>org.openengsb.domain</groupId>
@@ -94,10 +95,10 @@
         <groupId>com.agilejava.docbkx</groupId>
         <artifactId>docbkx-maven-plugin</artifactId>
       </plugin>
-      <plugin>
+      <!--<plugin>
         <groupId>org.apache.axis2</groupId>
         <artifactId>axis2-java2wsdl-maven-plugin</artifactId>
-      </plugin>
+      </plugin>-->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-assembly-plugin</artifactId>
@@ -121,6 +122,11 @@
       <artifactId>org.openengsb.framework.common</artifactId>
       <scope>provided</scope>
       <version>${openengsb.compile.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.openengsb.labs.delegation</groupId>
+      <artifactId>org.openengsb.labs.delegation.service</artifactId>
+      <version>${labs.delegation.version}</version>
     </dependency>
   </dependencies>
 
