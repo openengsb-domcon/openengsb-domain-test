@@ -107,6 +107,20 @@
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>wagon-maven-plugin</artifactId>
       </plugin>
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <extensions>true</extensions>
+        <configuration>
+          <instructions>
+            <Delegation-Annotations>true</Delegation-Annotations>
+            <Provide-Models>true</Provide-Models>
+            <Domain-Name>test</Domain-Name>
+            <Domain-Interface>org.openengsb.domain.test.TestDomain</Domain-Interface>
+            <DomainEvents-Interface>org.openengsb.domain.test.TestDomainEvents</DomainEvents-Interface>
+          </instructions>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 
