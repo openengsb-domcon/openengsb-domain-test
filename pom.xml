@@ -95,10 +95,10 @@
         <groupId>com.agilejava.docbkx</groupId>
         <artifactId>docbkx-maven-plugin</artifactId>
       </plugin>
-      <!--<plugin>
+      <plugin>
         <groupId>org.apache.axis2</groupId>
         <artifactId>axis2-java2wsdl-maven-plugin</artifactId>
-      </plugin>-->
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-assembly-plugin</artifactId>
